@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { DataProvider } from "./context/data-context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <DataProvider>
       <App />
-    </BrowserRouter>
+    </DataProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

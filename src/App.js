@@ -1,14 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import { Landing, Home } from "./pages/index";
 import "./App.css";
+import { useData } from "./context/data-context";
+import { Landing, Home } from "./pages";
 
 function App() {
+  const { dataState } = useData();
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/home" element={<Home />} />
-      </Routes>
+      {dataState.userName.length > 0 ? <Home /> : <Landing />}
     </div>
   );
 }

@@ -31,4 +31,6 @@
   background: var(--black-color);
   border-radius: 3rem;
   border: 3px solid var(--white-color);
+  color: var(--white-color);
+  cursor: pointer;
 }
