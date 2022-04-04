@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.main-section {
+  z-index: 3;
+  margin: 0.75rem;
+  color: var(--white-color);
+}
+
+.question-text {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.input-text {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 1rem;
+  border-bottom: 3px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.start-btn {
+  background: var(--black-color);
+  border-radius: 3rem;
+  border: 3px solid var(--white-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
