@@ -14,26 +14,22 @@ export const Landing = () => {
     <>
       <Background />
       <div className="main-section p-abs top-btm-lft-rgt fx-col fx-ai-center fx-jc-center">
-        <div className="prompt  fx-col fx-ai-center fx-jc-center">
+        <form
+          onSubmit={nameUpdateHandler}
+          className="fx-col fx-ai-center fx-jc-center"
+        >
           <p className="question-text">Hello, What's your name ?</p>
           <input
             type="text"
             className="input-text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            onKeyUp={(e) => {
-              if (e.key === "Enter") nameUpdateHandler();
-            }}
           />
-        </div>
-
-        <button
-          className="m-3 start-btn px-1-5 py-1 fs-1-5 fx fx-ai-center fx-jc-center"
-          onClick={nameUpdateHandler}
-        >
-          Lets Start
-          <i className="bx bxs-chevrons-right bx-fade-right"></i>
-        </button>
+          <button className="m-3 start-btn px-1-5 py-1 fs-1-5 fx fx-ai-center fx-jc-center">
+            Lets Start
+            <i className="bx bxs-chevrons-right bx-fade-right"></i>
+          </button>
+        </form>
       </div>
     </>
   );
