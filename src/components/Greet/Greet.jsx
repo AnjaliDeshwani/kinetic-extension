@@ -1,6 +1,6 @@
 import { useData } from "../../context/data-context";
 export const Greet = () => {
-  const { dataState, dataDispatch } = useData();
+  const { dataState } = useData();
   const { userName, time } = dataState;
 
   const hour = time.getHours();
