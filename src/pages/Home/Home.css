@@ -26,20 +26,39 @@
 }
 
 .change-time-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
   margin-left: 2.5rem;
-  background: none;
-  border: none;
   font-size: 2.5rem;
-  cursor: pointer;
-  color: var(--white-color);
 }
 .change-time-btn,
 .settings-btn {
+  position: relative;
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--white-color);
+}
+
+.change-time-btn:hover {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.change-time-btn:hover .clock-tooltip {
+  display: block;
+}
+
+.clock-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 0.75rem;
 }
 
 .center-region {

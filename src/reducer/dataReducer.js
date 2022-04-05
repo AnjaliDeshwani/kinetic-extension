@@ -6,6 +6,9 @@ export const dataReducer = (dataState, action) => {
       localStorage.setItem("name", action.payload.userName);
       return { ...dataState, userName: action.payload.userName };
 
+    case ACTION_TYPE.UPDATE_TIME:
+      return { ...dataState, time: action.payload.date };
+
     default:
       return dataState;
   }

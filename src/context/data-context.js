@@ -2,7 +2,7 @@ import { createContext, useContext, useReducer } from "react";
 import { dataReducer } from "../reducer/dataReducer";
 
 const DataContext = createContext();
-const initialState = { userName: "" };
+const initialState = { userName: "", time: new Date() };
 
 const DataProvider = ({ children }) => {
   const [dataState, dataDispatch] = useReducer(dataReducer, initialState);
