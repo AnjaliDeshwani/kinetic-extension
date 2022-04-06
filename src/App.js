@@ -1,14 +1,18 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import { useData } from "./context/data-context";
 import { Landing, Home } from "./pages";
 
 function App() {
   const { dataState } = useData();
-  return (
-    <div className="App">
-      {dataState.userName.length > 0 ? <Home /> : <Landing />}
-    </div>
-  );
+  const { userName } = dataState;
+  const [userPresent, setUserPresent] = useState(false);
+
+  useEffect(() => {
+    localStorage.getItem("name") ? setUserPresent(true) : setUserPresent(false);
+  }, [userName]);
+
+  return <div className="App">{userPresent ? <Home /> : <Landing />}</div>;
 }
 
 export default App;

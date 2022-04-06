@@ -11,7 +11,7 @@ export const Time = () => {
     is24Hrclock ? set24Hrclock(false) : set24Hrclock(true);
   };
 
-  let hours = is24Hrclock ? time.getHours() : time.getHours() - 12;
+  let hours = is24Hrclock ? time.getHours() : time.getHours() % 12 || 12;
   hours = hours < 10 ? `0${hours}` : hours;
   let mins = time.getMinutes();
   mins = mins < 10 ? `0${mins}` : mins;
@@ -30,9 +30,9 @@ export const Time = () => {
       <span className="time">
         {hours} : {mins}
       </span>
-      <button className="change-time-btn" onClick={updateTimeFormat}>
+      <button className="change-btn" onClick={updateTimeFormat}>
         <i className="bx bx-dots-horizontal-rounded"></i>
-        <span className="clock-tooltip">
+        <span className="change-tooltip">
           {is24Hrclock ? "Change to 12hr clock" : "Change to 24hr clock"}
         </span>
       </button>

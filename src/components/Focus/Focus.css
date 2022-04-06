@@ -1,0 +1,58 @@
+.modal {
+  background-color: rgb(0 0 0 / 81%);
+  width: 6rem;
+  position: relative;
+  left: 7rem;
+  bottom: 0.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.modal::after {
+  height: 0;
+  width: 0;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.modal-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--white-color);
+  padding: 4px 6px;
+}
+
+.modal-btn:hover {
+  color: black;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.focus-checkbox {
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  accent-color: var(--secondary-color);
+}
+
+.focus-strikethrough {
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+
+.focus-incomplete {
+  opacity: 0;
+}
+
+.focus-complete {
+  opacity: 1;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

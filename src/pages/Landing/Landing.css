@@ -13,6 +13,7 @@
 .question-text {
   font-size: 3rem;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .input-text {
@@ -33,4 +34,10 @@
   border: 3px solid var(--white-color);
   color: var(--white-color);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  .main-section {
+    margin: 0.75rem 2.5rem;
+  }
 }
