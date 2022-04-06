@@ -1,5 +1,5 @@
 import "./Focus.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useData } from "../../context/data-context";
 import { ACTION_TYPE } from "../../utils/constants";
 import { FocusModal } from "./FocusModal";
