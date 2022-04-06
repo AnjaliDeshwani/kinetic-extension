@@ -4,11 +4,19 @@ import { useData } from "../../context/data-context";
 import { Background } from "../../components";
 import { ACTION_TYPE } from "../../utils/constants";
 
-export const Landing = () => {
+export const Landing = (e) => {
   const { dataDispatch } = useData();
   const [name, setName] = useState("");
-  const nameUpdateHandler = () => {
-    dataDispatch({ type: ACTION_TYPE.ADD_USER, payload: { userName: name } });
+  const [error, setError] = useState(false);
+
+  const nameUpdateHandler = (e) => {
+    e.preventDefault();
+    name
+      ? dataDispatch({
+          type: ACTION_TYPE.ADD_USER,
+          payload: { userName: name },
+        })
+      : setError(true);
   };
   return (
     <>
@@ -30,6 +38,7 @@ export const Landing = () => {
             <i className="bx bxs-chevrons-right bx-fade-right"></i>
           </button>
         </form>
+        {error && <div>Please enter name to get started</div>}
       </div>
     </>
   );

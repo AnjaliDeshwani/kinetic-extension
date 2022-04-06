@@ -1,7 +1,12 @@
+import { useEffect, useState } from "react";
 import { useData } from "../../context/data-context";
 export const Greet = () => {
   const { dataState } = useData();
-  const { userName, time } = dataState;
+  const { time } = dataState;
+  const [userName, setUserName] = useState();
+  useEffect(() => {
+    setUserName(localStorage.getItem("name"));
+  }, []);
 
   const hour = time.getHours();
 

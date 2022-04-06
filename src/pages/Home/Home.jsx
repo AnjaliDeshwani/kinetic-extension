@@ -26,7 +26,7 @@ export const Home = () => {
           <Focus />
         </div>
 
-        <div className="bottom-region fx fx-ai-center fx-jc-sb">
+        <div className="bottom-region fx fx-ai-fe fx-jc-sb">
           <Settings />
           <Quote />
           <Todo />
