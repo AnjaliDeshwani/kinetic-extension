@@ -81,9 +81,9 @@ export const Weather = () => {
               alt="weather"
             />
             <p className="weather-temp">{weatherData.temp}°</p>
-            <div className="">
-              <p className="">Max: {weatherData.max}°</p>
-              <p className="">Min: {weatherData.min}°</p>
+            <div>
+              <p>Max: {weatherData.max}°</p>
+              <p>Min: {weatherData.min}°</p>
             </div>
           </div>
           <p className="weather-margin">Feels like: {weatherData.feelsLike}°</p>
