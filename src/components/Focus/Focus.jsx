@@ -30,7 +30,7 @@ export const Focus = () => {
         <div className="present-focus fx-col fx-ai-center fx-jc-center">
           <div className="focus-text">TODAY</div>
           <div className="focus-container fx fx-ai-center fx-jc-center">
-            <label>
+            <label className="checkbox-label">
               <input
                 type="checkbox"
                 className="focus-checkbox"
@@ -56,7 +56,7 @@ export const Focus = () => {
             className={`focus-incomplete ${focusCompleted && "focus-complete"}`}
           >
             Well done.
-            <i class="fa-solid fa-stars"></i>
+            <i className="fa-solid fa-stars"></i>
           </span>
         </div>
       ) : (
@@ -67,11 +67,12 @@ export const Focus = () => {
             className="input-text"
             value={currentFocus}
             onKeyUp={(e) => {
-              if (e.key === "Enter")
+              if (e.key === "Enter") {
                 dataDispatch({
                   type: ACTION_TYPE.ADD_FOCUS,
                   payload: { focus: currentFocus },
                 });
+              }
             }}
             onChange={onChangeFocusHandler}
           />

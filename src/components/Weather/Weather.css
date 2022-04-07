@@ -1,0 +1,28 @@
+.weather-modal {
+  position: absolute;
+  right: 0.5rem;
+  top: 3rem;
+  z-index: 1;
+  background-color: rgb(0 0 0 / 81%);
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 18rem;
+  min-height: 16rem;
+  padding: 1rem;
+}
+
+.weather-icon {
+  width: 4rem;
+}
+
+.weather-temp {
+  font-size: 3rem;
+}
+
+.weather-city {
+  font-size: 2rem;
+}
+
+.weather-margin {
+  margin: 0;
+}
