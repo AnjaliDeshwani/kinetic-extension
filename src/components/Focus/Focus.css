@@ -33,6 +33,9 @@
   background-color: white;
   border-radius: 2px;
 }
+.checkbox-label {
+  align-self: flex-end;
+}
 
 .focus-checkbox {
   font-size: 1rem;
