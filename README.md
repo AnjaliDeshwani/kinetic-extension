@@ -18,3 +18,7 @@ You can add focus and todos for the day.
 - React JS
 - React Context API + useReducer
 - Vanilla CSS integrated with Winsome UI
+
+## Demo Video
+
+![](https://github.com/AnjaliDeshwani/kinetic-extension/blob/dev/src/assets/extension-demo.gif)
