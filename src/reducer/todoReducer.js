@@ -4,8 +4,6 @@ import { ACTION_TYPE } from "../utils/constants";
 export const todoReducer = (todoState, action) => {
   let newTodoList;
   const todoComplete = () => {
-    const { id } = action.payload.id;
-
     newTodoList = todoState.todoList.reduce(
       (acc, todoItem) =>
         todoItem.id === action.payload.id
