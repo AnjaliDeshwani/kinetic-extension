@@ -6,6 +6,15 @@ You can add focus and todos for the day.
 - [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/kinetic-extension/)
 - [Live Link](https://kinetic-extension.netlify.app/)
 
+## How to install and run locally ?
+
+```bash
+$ git clone https://github.com/AnjaliDeshwani/kinetic-extension.git
+$ cd kinetic-extension
+$ npm install
+$ npm start
+```
+
 ## Features
 
 - Provides the weather info as per the users' loaction.
