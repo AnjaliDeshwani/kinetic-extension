@@ -3,6 +3,9 @@
 Boost your day with the amazing features of Kinetic. It will motivate you by providing insirational quotes and will help to manage your tasks.
 You can add focus and todos for the day.
 
+- [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/kinetic-extension/)
+- [Live Link](https://kinetic-extension.netlify.app/)
+
 ## Features
 
 - Provides the weather info as per the users' loaction.
